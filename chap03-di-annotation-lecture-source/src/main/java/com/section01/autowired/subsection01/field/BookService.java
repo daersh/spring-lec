@@ -10,7 +10,6 @@ import java.util.List;
 @Service
 public class BookService {
 
-
     /**
      * <h2>아래 3가지는 ComponentScan 범위 안에 어노테이션들이 달렸을 때 유효하다.</h2>
      * <ul>
@@ -19,6 +18,7 @@ public class BookService {
      * 3. @Autowired에 의해 BookDao 타입의 빈이 BookService의 필드인 bookDAO 필드에 주입된다.<br>
      * </ul>
      * */
+
     @Autowired  // 필드에 autowired를 달아 필드 주입이라 한다.
     private BookDAO bookDAO;  // = new BookDAOImpl();   //설명. ComponentScan 범위 안에 BookDAO 타입의 빈이 대입된다.
 
@@ -26,7 +26,11 @@ public class BookService {
     public List<BookDTO> findAllBook(){
         return bookDAO.findAllobook();
     }
-    /*목차 2. */
+
+    /*목차 2. 도서 번호로 도서 조회*/
+    public BookDTO searchBookBySequence(int sequence) {
+        return bookDAO.searchBookBySequence(sequence);
+    }
     /*목차 3. 도서 목록 전체 조회*/
 
 }

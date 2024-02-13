@@ -16,7 +16,13 @@ public class Application {
         ApplicationContext ac = new AnnotationConfigApplicationContext("com.section01");
         BookService bookService = ac.getBean("bookService", BookService.class);
         List<BookDTO> list =  bookService.findAllBook();
-
+        //설명. 저장되어 있는 도서 전부 출력
         bookService.findAllBook().forEach(System.out::println);
+
+        //설명. 특정 sequence의 도서 정보 출력
+        System.out.println(bookService.searchBookBySequence(1));
+        System.out.println(bookService.searchBookBySequence(2));
+
+
     }
 }

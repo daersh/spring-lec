@@ -18,4 +18,9 @@ public class BookDAOImpl implements BookDAO{
     public List<BookDTO> findAllobook() {
         return new ArrayList<>(bookList.values());  // 중요. HashMap의 값만 뽑아 ArrayList로 반환하기 위한 방법!    Map to List!!
     }
+
+    @Override
+    public BookDTO searchBookBySequence(int sequence) {
+        return bookList.get(sequence);
+    }
 }

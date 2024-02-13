@@ -5,4 +5,6 @@ import java.util.List;
 public interface BookDAO {
 
     List<BookDTO> findAllobook();
+
+    BookDTO searchBookBySequence(int sequence);
 }
