@@ -7,9 +7,9 @@ import java.util.Date;
 import java.util.Locale;
 
 /*
-* Globalization
-* internationalization: i n 사이 18글자 국제화
-* Localization: 현지화
+* Globalization: 세계화
+* internationalization: i n 사이 18글자 국제화. 외국에 대한 처리를 미리 고려한 것
+* Localization: 현지화. 나라에 맞춰 프론트 빽까지 다 한 것
 * */
 public class Application {
     public static void main(String[] args) {
