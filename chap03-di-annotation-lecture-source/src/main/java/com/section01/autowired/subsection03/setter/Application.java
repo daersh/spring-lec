@@ -9,6 +9,9 @@ public class Application {
         ApplicationContext ac = new AnnotationConfigApplicationContext("com.section01");
         BookService bookService = ac.getBean("bookServiceSetter", BookService.class);
         System.out.println(bookService.findAllBook());
-
+        int [] arr= new int[]{1, 2, 3, 4, 5};
+        for(int a : arr){
+            System.out.println(a);
+        }
     }
 }
