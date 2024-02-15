@@ -8,13 +8,13 @@ import java.util.Locale;
 
 /*
 * Globalization: 세계화
-* internationalization: i n 사이 18글자 국제화. 외국에 대한 처리를 미리 고려한 것
+* Internationalization: i n 사이 18글자 국제화. 외국에 대한 처리를 미리 고려한 것
 * Localization: 현지화. 나라에 맞춰 프론트 빽까지 다 한 것
 * */
 public class Application {
     public static void main(String[] args) {
         /*설명.
-            * i18n 소프트웨어의 국제화(International에서 첫 글자인 I와 마지막 글자인 n 사이 알파벳 개숫가 18개)란?
+            * i18n 소프트웨어의 국제화(Internationalization에서 첫 글자인 I와 마지막 글자인 n 사이 알파벳 개숫가 18개)란?
                 * 1. 언어, 지역별 번역
                 * 2. OS/Platform별 인코딩
                 * 3. 문자열 치환 방법

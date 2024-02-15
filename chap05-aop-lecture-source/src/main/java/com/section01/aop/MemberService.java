@@ -14,10 +14,12 @@ public class MemberService {
 
     public List<MemberDTO> findAllMembers() {   // 참고. primary concern 여기에 기능을 추가하려면 프록시로 감싸야한다.
                                                 //  이를 통해 기술 추가하면 aspect이다?
+        System.out.println("MemberService.findAllMembers");
         return memberDAO.selectAllMembers();
     }
 
-    public MemberDTO findMemberBy(long id) {
-        return memberDAO.selectMemberBy(id);
+    public MemberDTO findMemberBy(int index) {
+        System.out.println("MemberService.findMemberBy");
+        return memberDAO.selectMemberBy(index);
     }
 }
