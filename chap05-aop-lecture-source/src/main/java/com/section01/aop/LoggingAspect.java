@@ -100,7 +100,6 @@ public class LoggingAspect {
         System.out.println("** Around Before: "+joinPoint.getSignature().getName());
 
         Object result = joinPoint.proceed();    // 설명. 타겟 메소드 동작. reflection에서 invoke 시키는 것과 연관짓는 거 공부
-
         System.out.println("** Around After: "+joinPoint.getSignature().getName());
 
         /*설명. 실행된 타겟 메소드 반환(다른 어드바이스가 다시 실행할 수 있도록 반환한다.)*/
